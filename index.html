@@ -5,41 +5,52 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Филипп Литвинец — QA Engineer</title>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
     * { box-sizing: border-box; }
+
     body {
       margin: 0;
       font-family: 'Inter', sans-serif;
-      background: radial-gradient(1200px 600px at 10% -10%, #1e293b 0%, transparent 60%),
-                  radial-gradient(1000px 500px at 90% 10%, #0ea5e9 0%, transparent 55%),
-                  #0f172a;
+      background:
+        radial-gradient(1200px 600px at 10% -10%, #1e293b 0%, transparent 60%),
+        radial-gradient(1000px 500px at 90% 10%, #0ea5e9 0%, transparent 55%),
+        #0f172a;
       color: #e5e7eb;
       line-height: 1.6;
     }
+
     .container {
       max-width: 1000px;
       margin: 0 auto;
       padding: 40px 20px;
     }
+
     header {
       display: grid;
+      grid-template-columns: auto 180px;
+      align-items: center;
       gap: 20px;
       margin-bottom: 40px;
     }
+
     h1 {
       font-size: 42px;
       margin: 0;
     }
+
     h2 {
       color: #38bdf8;
       margin-top: 40px;
       margin-bottom: 16px;
       font-size: 24px;
     }
+
     .subtitle {
       font-size: 20px;
       color: #94a3b8;
     }
+
     .card {
       background: #020617;
       border-radius: 16px;
@@ -50,20 +61,27 @@
       transform: translateY(40px);
       transition: all 0.8s ease;
     }
+
     .card.visible {
       opacity: 1;
       transform: translateY(0);
     }
+
     .grid {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
       gap: 20px;
     }
+
     ul {
       padding-left: 20px;
       margin: 0;
     }
-    li { margin-bottom: 8px; }
+
+    li {
+      margin-bottom: 8px;
+    }
+
     .badge {
       display: inline-block;
       background: #1e293b;
@@ -72,165 +90,8 @@
       margin: 4px 6px 4px 0;
       font-size: 14px;
     }
-    .contacts {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 6px;
-    }
 
-    .contact-item {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      gap: 6px;
-      width: 100%;
-      text-align: center;
-    }
-
-    .contact-item a {
-      color: #38bdf8;
-      text-decoration: none;
-    }
-
-    .contact-item a:visited,
-    .contact-item a:active,
-    .contact-item a:focus {
-      color: #38bdf8;
-    }
-
-    .contacts a,
-    .contacts span {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      margin: 0 auto 6px auto;
-    }
-  /* ===== Mobile styles ===== */
-    @media (max-width: 768px) {
-      header {
-        grid-template-columns: 1fr !important;
-        text-align: center;
-      }
-
-      header img {
-        margin-top: 20px;
-      }
-
-      h1 {
-        font-size: 32px;
-      }
-
-      .subtitle {
-        font-size: 18px;
-      }
-
-      .container {
-        padding: 24px 16px;
-      }
-
-      .grid {
-        grid-template-columns: 1fr;
-      }
-
-      .contacts {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 6px;
-      }
-
-      .contacts a,
-      .contacts span {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        color: #38bdf8;
-      }
-
-      .tg-link {
-        display: inline-flex;
-        align-items: center;
-        justify-content: center;
-        gap: 8px;
-      }
-    }
-
-      header img {
-        margin-top: 20px;
-      }
-
-      h1 {
-        font-size: 32px;
-      }
-
-      .subtitle {
-        font-size: 18px;
-      }
-
-      .container {
-        padding: 24px 16px;
-      }
-
-      .grid {
-        grid-template-columns: 1fr;
-      }
-
-      .contacts a,
-      .contacts span {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        text-align: center;
-      }
-
-      .tg-link {
-      gap: 8px;
-    }
-    }
-
-      header img {
-        margin-top: 20px;
-      }
-
-      h1 {
-        font-size: 32px;
-      }
-
-      .subtitle {
-        font-size: 18px;
-      }
-
-      .container {
-        padding: 24px 16px;
-      }
-
-      .grid {
-        grid-template-columns: 1fr;
-      }
-
-      .contacts a,
-      .contacts span {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100%;
-        text-align: center;
-      }
-
-      .contacts a {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-      }
-
-      .badge {
-        font-size: 13px;
-        padding: 5px 10px;
-      }
-    }
-/* ===== Contacts (stable layout) ===== */
+    /* ===== Contacts ===== */
     .contact-list {
       list-style: none;
       padding: 0;
@@ -244,8 +105,8 @@
     .contact-list li {
       display: flex;
       align-items: center;
-      gap: 8px;
       justify-content: center;
+      gap: 8px;
       text-align: center;
     }
 
@@ -254,40 +115,78 @@
       text-decoration: none;
     }
 
-    .contact-list a:visited,
-    .contact-list a:active,
-    .contact-list a:focus {
+    .contact-list a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== Experience links (FIX) ===== */
+    .experience a {
+      color: #94a3b8;
+      text-decoration: underline;
+      transition: color 0.2s ease;
+    }
+
+    .experience a:hover {
       color: #38bdf8;
     }
 
-    .tg-link svg {
-      flex-shrink: 0;
-    }
-</style>
-<script>
-  document.addEventListener('DOMContentLoaded', () => {
-    const cards = document.querySelectorAll('.card');
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('visible');
-        }
-      });
-    }, { threshold: 0.15 });
+    /* ===== Mobile ===== */
+    @media (max-width: 768px) {
+      header {
+        grid-template-columns: 1fr;
+        text-align: center;
+      }
 
-    cards.forEach(card => observer.observe(card));
-  });
-</script>
+      header img {
+        margin-top: 20px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+      }
+
+      .container {
+        padding: 24px 16px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const cards = document.querySelectorAll('.card');
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible');
+          }
+        });
+      }, { threshold: 0.15 });
+
+      cards.forEach(card => observer.observe(card));
+    });
+  </script>
 </head>
+
 <body>
   <div class="container">
-    <header style="grid-template-columns: auto 180px; align-items: center;">
+
+    <header>
       <div>
         <h1>Филипп Литвинец</h1>
         <div class="subtitle">Quality Assurance Engineer</div>
       </div>
       <div style="display:flex; justify-content:center;">
-        <img src="photo.jpg" alt="Филипп Литвинец" style="width:160px; height:160px; object-fit:cover; border-radius:50%; border:3px solid #38bdf8; box-shadow:0 10px 30px rgba(0,0,0,0.4);" />
+        <img src="photo.jpg" alt="Филипп Литвинец"
+             style="width:160px;height:160px;object-fit:cover;border-radius:50%;
+             border:3px solid #38bdf8;box-shadow:0 10px 30px rgba(0,0,0,0.4);" />
       </div>
     </header>
 
@@ -296,9 +195,12 @@
       <ul class="contact-list">
         <li>📞 <a href="tel:+79602655637">+7 960 265-56-37</a></li>
         <li>✉️ <a href="mailto:litvinetsqa@gmail.com">litvinetsqa@gmail.com</a></li>
-        <li class="tg-link">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <path d="M21.8 2.2L2.9 10.1c-1.3.5-1.3 1.3-.2 1.7l4.9 1.5 1.9 5.8c.2.6.4.8.9.8.4 0 .6-.2.9-.4l2.8-2.7 5.8 4.3c1.1.6 1.9.3 2.2-1l3.3-15.5c.4-1.6-.6-2.3-1.6-1.9z" fill="#38bdf8"/>
+        <li>
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none">
+            <path d="M21.8 2.2L2.9 10.1c-1.3.5-1.3 1.3-.2 1.7l4.9 1.5
+            1.9 5.8c.2.6.4.8.9.8.4 0 .6-.2.9-.4l2.8-2.7
+            5.8 4.3c1.1.6 1.9.3 2.2-1l3.3-15.5c.4-1.6-.6-2.3-1.6-1.9z"
+            fill="#38bdf8"/>
           </svg>
           <a href="https://t.me/bncwow" target="_blank">@bncwow</a>
         </li>
@@ -308,79 +210,25 @@
 
     <section class="card">
       <h2>Обо мне</h2>
-      <p>Начинающий QA‑инженер с глубоким интересом к обеспечению качества ПО. Прошел практический курс по тестированию, владею основами тест‑дизайна, составления тест‑кейсов и баг‑репортов. Стремлюсь развиваться в области тестирования и работать в команде, где ценится качество и инициатива.</p>
+      <p>Начинающий QA-инженер с глубоким интересом к обеспечению качества ПО...</p>
     </section>
 
-    <section class="grid">
-      <div class="card">
-        <h2>Навыки</h2>
-        <div>
-          <span class="badge">Postman</span>
-          <span class="badge">SQL</span>
-          <span class="badge">Jira</span>
-          <span class="badge">Charles Proxy</span>
-          <span class="badge">DevTools</span>
-          <span class="badge">API Testing</span>
-          <span class="badge">Swagger</span>
-          <ul>
-            <li>Функциональное и регрессионное тестирование веб‑приложений</li>
-            <li>Тестирование API (REST, SOAP): SOAPUI, Postman, Swagger</li>
-            <li>Составление тест‑кейсов, чек‑листов и баг‑репортов(Jira), тест-планов</li>
-            <li>Анализ требований</li>
-            <li>Техники тест-дизайна (Анализ граничных знанчение, попарное тестирование, таблица переходов и состояний</li>
-            <li>Работа с DevTools: анализ запросов/ответов, HTTP‑статусы</li>
-            <li>Базовые SQL‑запросы для проверки данных(На уровне JOIN-ов)</li>
-            <li>Использование Charles Proxy для анализа сетевого трафика</li>
-            <li>Git. Базовые команды, работа с изменениями.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="card">
-        <h2>Личные качества</h2>
-        <ul>
-          <li>Обучаемость</li>
-          <li>Усидчивость</li>
-          <li>Ответственность</li>
-          <li>Стрессоустойчивость</li>
-          <li>Внимание к деталям</li>
-        </ul>
-      </div>
-    </section>
-
-    <section class="card">
+    <section class="card experience">
       <h2>Опыт работы</h2>
-      <p><strong>QA Engineer (пет-проекты)</strong><br>Декабрь 2025 — Январь 2026 (2 месяца)</p>
+      <p><strong>QA Engineer (пет-проекты)</strong><br>
+         Декабрь 2025 — Январь 2026</p>
       <ul>
         <li><a href="https://petstore.swagger.io/#/pet/addPet">Petstore</a></li>
-        <li><a href="https://opentip.kaspersky.com/Help_ru/Doc_data/WorkingWithAPI.htm">Kaspersky Threat Intelligence Portal</a></li>
-        <li><a href="https://www.saucedemo.com/">Демо Интернет-Магазин</a></li>
-        <p>Тестирование API (Postman(простые автотесты, коллекции, переменные)). Тестирование полей ввода. Тестирование пользовательских сценариев: каталог, корзина, оформление заказа. Составление чек-листов, баг-репортов.</p>
+        <li><a href="https://opentip.kaspersky.com/Help_ru/Doc_data/WorkingWithAPI.htm">
+          Kaspersky Threat Intelligence Portal</a></li>
+        <li><a href="https://www.saucedemo.com/">Демо интернет-магазин</a></li>
       </ul>
-    </section>
-
-    <section class="grid">
-      <div class="card">
-        <h2>Образование</h2>
-        <p><strong>СПбГУТ</strong><br>
-        Инфокоммуникационные технологии и системы связи<br>
-        Радиотехника (2015)</p>
-      </div>
-      <div class="card">
-        <h2>Курсы</h2>
-        <p><strong>Тестирование ПО с нуля</strong><br>
-        Stepik (2025)<br>
-        4 месяца — теория и практика</p>
-      </div>
-    </section>
-
-    <section class="card">
-      <h2>Языки</h2>
-      <p>🇬🇧 Английский — B2 (Upper‑Intermediate)</p>
     </section>
 
     <footer>
       © 2026 · Филипп Литвинец · QA Engineer
     </footer>
+
   </div>
 </body>
 </html>
