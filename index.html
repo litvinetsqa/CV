@@ -73,7 +73,30 @@
       font-size: 14px;
     }
     .contacts {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .contact-item {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      width: 100%;
       text-align: center;
+    }
+
+    .contact-item a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    .contact-item a:visited,
+    .contact-item a:active,
+    .contact-item a:focus {
+      color: #38bdf8;
     }
 
     .contacts a,
@@ -89,6 +112,49 @@
         grid-template-columns: 1fr !important;
         text-align: center;
       }
+
+      header img {
+        margin-top: 20px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+      }
+
+      .container {
+        padding: 24px 16px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contacts {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 6px;
+      }
+
+      .contacts a,
+      .contacts span {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        color: #38bdf8;
+      }
+
+      .tg-link {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+      }
+    }
 
       header img {
         margin-top: 20px;
@@ -164,6 +230,39 @@
         padding: 5px 10px;
       }
     }
+/* ===== Contacts (stable layout) ===== */
+    .contact-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .contact-list li {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .contact-list a {
+      color: #38bdf8;
+      text-decoration: none;
+    }
+
+    .contact-list a:visited,
+    .contact-list a:active,
+    .contact-list a:focus {
+      color: #38bdf8;
+    }
+
+    .tg-link svg {
+      flex-shrink: 0;
+    }
 </style>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
@@ -194,17 +293,17 @@
 
     <section class="card">
       <h2>Контакты</h2>
-      <div class="contacts">
-        <a href="tel:+79602655637">📞 +7 960 265-56-37</a>
-        <a href="mailto:litvinetsqa@gmail.com">✉️ litvinetsqa@gmail.com</a>
-        <a href="https://t.me/bncwow" target="_blank" class="tg-link">
+      <ul class="contact-list">
+        <li>📞 <a href="tel:+79602655637">+7 960 265-56-37</a></li>
+        <li>✉️ <a href="mailto:litvinetsqa@gmail.com">litvinetsqa@gmail.com</a></li>
+        <li class="tg-link">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M21.8 2.2L2.9 10.1c-1.3.5-1.3 1.3-.2 1.7l4.9 1.5 1.9 5.8c.2.6.4.8.9.8.4 0 .6-.2.9-.4l2.8-2.7 5.8 4.3c1.1.6 1.9.3 2.2-1l3.3-15.5c.4-1.6-.6-2.3-1.6-1.9z" fill="#38bdf8"/>
           </svg>
-          <span>@bncwow</span>
-        </a>
-        <span>📍 Санкт-Петербург</span>
-      </div>
+          <a href="https://t.me/bncwow" target="_blank">@bncwow</a>
+        </li>
+        <li>📍 Санкт-Петербург</li>
+      </ul>
     </section>
 
     <section class="card">
