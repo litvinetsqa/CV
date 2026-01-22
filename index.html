@@ -84,7 +84,51 @@
       color: #64748b;
       font-size: 14px;
     }
-  </style>
+  /* ===== Mobile styles ===== */
+    @media (max-width: 768px) {
+      header {
+        grid-template-columns: 1fr !important;
+        text-align: center;
+      }
+
+      header img {
+        margin-top: 20px;
+      }
+
+      h1 {
+        font-size: 32px;
+      }
+
+      .subtitle {
+        font-size: 18px;
+      }
+
+      .container {
+        padding: 24px 16px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contacts a,
+      .contacts span {
+        justify-content: center;
+        text-align: center;
+      }
+
+      .contacts a {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .badge {
+        font-size: 13px;
+        padding: 5px 10px;
+      }
+    }
+</style>
 <script>
   document.addEventListener('DOMContentLoaded', () => {
     const cards = document.querySelectorAll('.card');
