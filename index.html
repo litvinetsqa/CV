@@ -72,17 +72,16 @@
       margin: 4px 6px 4px 0;
       font-size: 14px;
     }
-    .contacts a {
-      color: #38bdf8;
-      text-decoration: none;
-      display: block;
-      margin-bottom: 6px;
-    }
-    footer {
+    .contacts {
       text-align: center;
-      margin-top: 60px;
-      color: #64748b;
-      font-size: 14px;
+    }
+
+    .contacts a,
+    .contacts span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 6px auto;
     }
   /* ===== Mobile styles ===== */
     @media (max-width: 768px) {
@@ -121,8 +120,8 @@
       }
 
       .tg-link {
-        gap: 8px;
-      }
+      gap: 8px;
+    }
     }
 
       header img {
