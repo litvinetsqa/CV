@@ -1,45 +1,62 @@
 <!DOCTYPE html>
+
 <html lang="ru">
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Филипп Литвинец — QA Engineer</title>
+
+<title data-ru="Филипп Литвинец — QA Engineer"
+       data-en="Philipp Litvinets — QA Engineer">
+  Филипп Литвинец — QA Engineer
+</title>
+
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
 <style>
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: 'Inter', sans-serif;
-  background: radial-gradient(1200px 600px at 10% -10%, #1e293b 0%, transparent 60%),
-              radial-gradient(1000px 500px at 90% 10%, #0ea5e9 0%, transparent 55%),
-              #0f172a;
+  background:
+    radial-gradient(1200px 600px at 10% -10%, #1e293b 0%, transparent 60%),
+    radial-gradient(1000px 500px at 90% 10%, #0ea5e9 0%, transparent 55%),
+    #0f172a;
   color: #e5e7eb;
   line-height: 1.6;
 }
+
 .container {
   max-width: 1000px;
   margin: 0 auto;
   padding: 40px 20px;
 }
+
 header {
   display: grid;
   gap: 20px;
   margin-bottom: 40px;
 }
+
 h1 {
   font-size: 42px;
   margin: 0;
 }
+
 h2 {
   color: #38bdf8;
   margin-top: 40px;
   margin-bottom: 16px;
   font-size: 24px;
 }
+
 .subtitle {
   font-size: 20px;
   color: #94a3b8;
 }
+
 .card {
   background: #020617;
   border-radius: 16px;
@@ -50,22 +67,27 @@ h2 {
   transform: translateY(40px);
   transition: all 0.8s ease;
 }
+
 .card.visible {
   opacity: 1;
   transform: translateY(0);
 }
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
 }
+
 ul {
   padding-left: 20px;
   margin: 0;
 }
+
 li {
   margin-bottom: 8px;
 }
+
 .badge {
   display: inline-block;
   background: #1e293b;
@@ -74,118 +96,7 @@ li {
   margin: 4px 6px 4px 0;
   font-size: 14px;
 }
-.contacts {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 6px;
-}
-.contact-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 6px;
-  width: 100%;
-  text-align: center;
-}
-.contact-item a {
-  color: #38bdf8;
-  text-decoration: none;
-}
-.contact-item a:visited,
-.contact-item a:active,
-.contact-item a:focus {
-  color: #38bdf8;
-}
-.contacts a,
-.contacts span {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0 auto 6px auto;
-}
 
-/* ===== Mobile styles ===== */
-@media (max-width: 768px) {
-  header {
-    grid-template-columns: 1fr !important;
-    text-align: center;
-  }
-  header img {
-    margin-top: 20px;
-  }
-  h1 {
-    font-size: 32px;
-  }
-  .subtitle {
-    font-size: 18px;
-  }
-  .container {
-    padding: 24px 16px;
-  }
-  .grid {
-    grid-template-columns: 1fr;
-  }
-  .contacts {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 6px;
-  }
-  .contacts a,
-  .contacts span {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    color: #38bdf8;
-  }
-  .tg-link {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 8px;
-  }
-}
-header img { margin-top: 20px; }
-h1 { font-size: 32px; }
-.subtitle { font-size: 18px; }
-.container { padding: 24px 16px; }
-.grid { grid-template-columns: 1fr; }
-.contacts a,
-.contacts span {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  text-align: center;
-}
-.tg-link { gap: 8px; }
-}
-header img { margin-top: 20px; }
-h1 { font-size: 32px; }
-.subtitle { font-size: 18px; }
-.container { padding: 24px 16px; }
-.grid { grid-template-columns: 1fr; }
-.contacts a,
-.contacts span {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  text-align: center;
-}
-.contacts a {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.badge {
-  font-size: 13px;
-  padding: 5px 10px;
-}
-}
-
-/* ===== Contacts (stable layout) ===== */
 .contact-list {
   list-style: none;
   padding: 0;
@@ -195,6 +106,7 @@ h1 { font-size: 32px; }
   align-items: center;
   gap: 8px;
 }
+
 .contact-list li {
   display: flex;
   align-items: center;
@@ -202,153 +114,645 @@ h1 { font-size: 32px; }
   justify-content: center;
   text-align: center;
 }
+
 .contact-list a {
   color: #38bdf8;
   text-decoration: none;
 }
+
 .contact-list a:visited,
 .contact-list a:active,
 .contact-list a:focus {
   color: #38bdf8;
 }
+
 .tg-link svg {
   flex-shrink: 0;
 }
-  /* ===== Experience links ===== */
+
+/* Experience links */
 .card ul li a {
-  color: #94a3b8;          /* спокойный серо-голубой */
+  color: #94a3b8;
   text-decoration: underline;
   transition: color 0.2s ease;
 }
 
 .card ul li a:hover {
-  color: #38bdf8;          /* подсветка при наведении */
+  color: #38bdf8;
 }
 
+/* Language switcher */
+.language-switcher {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+
+  display: flex;
+  gap: 4px;
+
+  padding: 4px;
+  background: #020617;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+
+  box-shadow: 0 5px 20px rgba(0,0,0,0.3);
+}
+
+.language-switcher button {
+  border: none;
+  background: transparent;
+  color: #94a3b8;
+
+  padding: 7px 10px;
+  border-radius: 7px;
+
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 600;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.language-switcher button:hover {
+  color: #e5e7eb;
+}
+
+.language-switcher button.active {
+  background: #38bdf8;
+  color: #020617;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  color: #64748b;
+  margin-top: 30px;
+  padding-bottom: 20px;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .container {
+    padding: 70px 16px 24px;
+  }
+
+  header {
+    grid-template-columns: 1fr !important;
+    text-align: center;
+  }
+
+  header img {
+    margin-top: 20px;
+  }
+
+  h1 {
+    font-size: 32px;
+  }
+
+  .subtitle {
+    font-size: 18px;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 6px;
+  }
+
+  .contacts a,
+  .contacts span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #38bdf8;
+  }
+
+  .badge {
+    font-size: 13px;
+    padding: 5px 10px;
+  }
+
+  .language-switcher {
+    top: 12px;
+    right: 12px;
+  }
+}
 </style>
 
 <script>
 document.addEventListener('DOMContentLoaded', () => {
+
+  /* ===== Cards animation ===== */
+
   const cards = document.querySelectorAll('.card');
+
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
         entry.target.classList.add('visible');
       }
     });
-  }, { threshold: 0.15 });
+  }, {
+    threshold: 0.15
+  });
+
   cards.forEach(card => observer.observe(card));
+
+
+  /* ===== Language switcher ===== */
+
+  const languageButtons = document.querySelectorAll('.language-switcher button');
+
+  function setLanguage(language) {
+
+    document.documentElement.lang = language;
+
+    /*
+     * Меняем весь текст, у которого есть
+     * data-ru и data-en.
+     */
+    document.querySelectorAll('[data-ru][data-en]').forEach(element => {
+      element.textContent = element.dataset[language];
+    });
+
+    /*
+     * Меняем alt у фотографии.
+     */
+    document.querySelectorAll('[data-alt-ru][data-alt-en]').forEach(element => {
+      element.alt = element.dataset[`alt-${language}`];
+    });
+
+    /*
+     * Активная кнопка языка.
+     */
+    languageButtons.forEach(button => {
+      button.classList.toggle(
+        'active',
+        button.dataset.language === language
+      );
+    });
+
+    /*
+     * Сохраняем выбранный язык.
+     */
+    localStorage.setItem('language', language);
+  }
+
+  languageButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      setLanguage(button.dataset.language);
+    });
+  });
+
+  /*
+   * При открытии страницы:
+   * если язык уже выбирали — используем его.
+   * Иначе русский.
+   */
+  const savedLanguage = localStorage.getItem('language') || 'ru';
+
+  setLanguage(savedLanguage);
 });
 </script>
+
 </head>
 
 <body>
+
+<!-- Language switcher -->
+
+<div class="language-switcher">
+  <button data-language="ru" class="active">RU</button>
+  <button data-language="en">EN</button>
+</div>
+
 <div class="container">
+
+<!-- ===== Header ===== -->
+
 <header style="grid-template-columns: auto 180px; align-items: center;">
+
   <div>
-    <h1>Филипп Литвинец<br>30 лет</h1>
-    <div class="subtitle">Quality Assurance Engineer</div>
+    <h1>
+      <span data-ru="Филипп Литвинец" data-en="Philipp Litvinets">
+        Филипп Литвинец
+      </span>
+      <br>
+
+```
+  <span data-ru="30 лет" data-en="30 years old">
+    30 лет
+  </span>
+</h1>
+
+<div class="subtitle">
+  Quality Assurance Engineer
+</div>
+```
+
   </div>
+
   <div style="display:flex; justify-content:center;">
-    <img src="photo.jpg" alt="Филипп Литвинец"
-      style="width:160px; height:160px; object-fit:cover; border-radius:50%;
-      border:3px solid #38bdf8; box-shadow:0 10px 30px rgba(0,0,0,0.4);" />
+
+```
+<img
+  src="photo.jpg"
+  data-alt-ru="Филипп Литвинец"
+  data-alt-en="Philipp Litvinets"
+  alt="Филипп Литвинец"
+  style="
+    width:160px;
+    height:160px;
+    object-fit:cover;
+    border-radius:50%;
+    border:3px solid #38bdf8;
+    box-shadow:0 10px 30px rgba(0,0,0,0.4);
+  "
+/>
+```
+
   </div>
+
 </header>
 
-<section class="card">
-<h2>Контакты</h2>
-<ul class="contact-list">
-  <li>📞 <a href="tel:+79602655637">+7 960 265-56-37</a></li>
-  <li>✉️ <a href="mailto:litvinetsqa@gmail.com">litvinetsqa@gmail.com</a></li>
-  <li class="tg-link">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
-      xmlns="http://www.w3.org/2000/svg">
-      <path d="M21.8 2.2L2.9 10.1c-1.3.5-1.3 1.3-.2 1.7l4.9 1.5 1.9 5.8c.2.6.4.8.9.8.4 0 .6-.2.9-.4l2.8-2.7 5.8 4.3c1.1.6 1.9.3 2.2-1l3.3-15.5c.4-1.6-.6-2.3-1.6-1.9z"
-        fill="#38bdf8"/>
-    </svg>
-    <a href="https://t.me/bncwow" target="_blank">@bncwow</a>
-  </li>
-  <li>📍 Санкт-Петербург</li>
-</ul>
-</section>
+<!-- ===== Contacts ===== -->
 
 <section class="card">
-<h2>Обо мне</h2>
-<p>Начинающий QA‑инженер с глубоким интересом к обеспечению качества ПО. Прошел практический курс по тестированию, владею основами тест‑дизайна, составления тест‑кейсов и баг‑репортов. Стремлюсь развиваться в области тестирования и работать в команде, где ценится качество и инициатива.</p>
+
+  <h2 data-ru="Контакты" data-en="Contacts">
+    Контакты
+  </h2>
+
+  <ul class="contact-list">
+
+```
+<li>
+  📞
+  <a href="tel:+79602655637">
+    +7 960 265-56-37
+  </a>
+</li>
+
+<li>
+  ✉️
+  <a href="mailto:litvinetsqa@gmail.com">
+    litvinetsqa@gmail.com
+  </a>
+</li>
+
+<li class="tg-link">
+
+  <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+    xmlns="http://www.w3.org/2000/svg">
+
+    <path
+      d="M21.8 2.2L2.9 10.1c-1.3.5-1.3 1.3-.2 1.7l4.9 1.5 1.9 5.8c.2.6.4.8.9.8.4 0 .6-.2.9-.4l2.8-2.7 5.8 4.3c1.1.6 1.9.3 2.2-1l3.3-15.5c.4-1.6-.6-2.3-1.6-1.9z"
+      fill="#38bdf8"
+    />
+
+  </svg>
+
+  <a href="https://t.me/bncwow" target="_blank">
+    @bncwow
+  </a>
+
+</li>
+
+<li>
+  <span data-ru="📍 Санкт-Петербург" data-en="📍 Saint Petersburg">
+    📍 Санкт-Петербург
+  </span>
+</li>
+```
+
+  </ul>
+
 </section>
+
+<!-- ===== About ===== -->
+
+<section class="card">
+
+  <h2 data-ru="Обо мне" data-en="About Me">
+    Обо мне
+  </h2>
+
+  <p
+    data-ru="Начинающий QA-инженер с глубоким интересом к обеспечению качества ПО. Прошел практический курс по тестированию, владею основами тест-дизайна, составления тест-кейсов и баг-репортов. Стремлюсь развиваться в области тестирования и работать в команде, где ценится качество и инициатива."
+    data-en="Junior QA Engineer with a strong interest in software quality assurance. I have completed a practical software testing course and have a solid understanding of test design, test case creation, and bug reporting. I am eager to develop my testing skills and work in a team that values quality and initiative."
+  >
+    Начинающий QA-инженер с глубоким интересом к обеспечению качества ПО. Прошел практический курс по тестированию, владею основами тест-дизайна, составления тест-кейсов и баг-репортов. Стремлюсь развиваться в области тестирования и работать в команде, где ценится качество и инициатива.
+  </p>
+
+</section>
+
+<!-- ===== Skills ===== -->
 
 <section class="grid">
-  <div class="card">
-    <h2>Навыки</h2>
-    <div>
-      <span class="badge">Postman</span>
-      <span class="badge">SQL</span>
-      <span class="badge">Jira</span>
-      <span class="badge">Charles Proxy</span>
-      <span class="badge">DevTools</span>
-      <span class="badge">API Testing</span>
-      <span class="badge">Swagger</span>
-      <ul>
-        <li>Функциональное и регрессионное тестирование веб‑приложений</li>
-        <li>Тестирование API (REST, SOAP): SOAPUI, Postman, Swagger</li>
-        <li>Составление тест‑кейсов, чек‑листов и баг‑репортов(Jira, Notion), тест-планов</li>
-        <li>Анализ требований</li>
-        <li>UI/UX Тестирование</li>
-        <li>Техники тест-дизайна (Анализ граничных знанчение, попарное тестирование, таблица переходов и состояний</li>
-        <li>Работа с DevTools: анализ запросов/ответов, HTTP‑статусы</li>
-        <li>Базовые SQL‑запросы для проверки данных(На уровне JOIN-ов)</li>
-        <li>Использование Charles Proxy для анализа сетевого трафика</li>
-        <li>Git. Базовые команды, работа с изменениями.</li>
-      </ul>
-    </div>
-  </div>
-  <div class="card">
-    <h2>Личные качества</h2>
-    <ul>
-      <li>Обучаемость</li>
-      <li>Усидчивость</li>
-      <li>Ответственность</li>
-      <li>Стрессоустойчивость</li>
-      <li>Внимание к деталям</li>
-    </ul>
-  </div>
-</section>
 
-<section class="card">
-<h2>Опыт работы</h2>
-<p><strong>QA Engineer (пет-проекты)</strong><br>Декабрь 2025 — Январь 2026 (2 месяца)</p>
+  <div class="card">
+
+```
+<h2 data-ru="Навыки" data-en="Skills">
+  Навыки
+</h2>
+
+<div>
+
+  <span class="badge">Postman</span>
+  <span class="badge">SQL</span>
+  <span class="badge">Jira</span>
+  <span class="badge">Charles Proxy</span>
+  <span class="badge">DevTools</span>
+  <span class="badge">API Testing</span>
+  <span class="badge">Swagger</span>
+
+  <ul>
+
+    <li
+      data-ru="Функциональное и регрессионное тестирование веб-приложений"
+      data-en="Functional and regression testing of web applications">
+      Функциональное и регрессионное тестирование веб-приложений
+    </li>
+
+    <li
+      data-ru="Тестирование API (REST, SOAP): SOAPUI, Postman, Swagger"
+      data-en="API testing (REST, SOAP): SOAPUI, Postman, Swagger">
+      Тестирование API (REST, SOAP): SOAPUI, Postman, Swagger
+    </li>
+
+    <li
+      data-ru="Составление тест-кейсов, чек-листов и баг-репортов (Jira, Notion), тест-планов"
+      data-en="Creating test cases, checklists, bug reports (Jira, Notion), and test plans">
+      Составление тест-кейсов, чек-листов и баг-репортов (Jira, Notion), тест-планов
+    </li>
+
+    <li
+      data-ru="Анализ требований"
+      data-en="Requirements analysis">
+      Анализ требований
+    </li>
+
+    <li
+      data-ru="UI/UX тестирование"
+      data-en="UI/UX testing">
+      UI/UX тестирование
+    </li>
+
+    <li
+      data-ru="Техники тест-дизайна (анализ граничных значений, попарное тестирование, таблица переходов и состояний)"
+      data-en="Test design techniques (boundary value analysis, pairwise testing, state transition testing)">
+      Техники тест-дизайна (анализ граничных значений, попарное тестирование, таблица переходов и состояний)
+    </li>
+
+    <li
+      data-ru="Работа с DevTools: анализ запросов/ответов, HTTP-статусы"
+      data-en="Working with DevTools: request/response analysis, HTTP status codes">
+      Работа с DevTools: анализ запросов/ответов, HTTP-статусы
+    </li>
+
+    <li
+      data-ru="Базовые SQL-запросы для проверки данных (на уровне JOIN-ов)"
+      data-en="Basic SQL queries for data validation (including JOINs)">
+      Базовые SQL-запросы для проверки данных (на уровне JOIN-ов)
+    </li>
+
+    <li
+      data-ru="Использование Charles Proxy для анализа сетевого трафика"
+      data-en="Using Charles Proxy for network traffic analysis">
+      Использование Charles Proxy для анализа сетевого трафика
+    </li>
+
+    <li
+      data-ru="Git. Базовые команды, работа с изменениями"
+      data-en="Git. Basic commands and working with changes">
+      Git. Базовые команды, работа с изменениями
+    </li>
+
+  </ul>
+
+</div>
+```
+
+  </div>
+
+  <!-- ===== Personal qualities ===== -->
+
+  <div class="card">
+
+```
+<h2 data-ru="Личные качества" data-en="Personal Qualities">
+  Личные качества
+</h2>
+
 <ul>
-  <li><a href="https://petstore.swagger.io/#/pet/addPet">Petstore</a></li>
-  <li><a href="https://opentip.kaspersky.com/Help_ru/Doc_data/WorkingWithAPI.htm">Kaspersky Threat Intelligence Portal</a></li>
-  <li><a href="https://www.saucedemo.com/">Демо Интернет-Магазин</a></li>
-  <p>Тестирование API (Postman (простые автотесты, коллекции, переменные)). Тестирование полей ввода. Тестирование пользовательских сценариев: каталог, корзина, оформление заказа. Составление чек-листов, баг-репортов.</p>
-  <p><strong>QA Engineer</strong></p>
-  <li><strong>Bulka Games Февраль 2026 - Настоящее время.</strong></li>
-  <p>UI/UX Тестирование, Accessibility, Анализ требований, Работа с БД, Чтение и анализ логов, Регресс/Smoke </p>
+
+  <li data-ru="Обучаемость" data-en="Fast learner">
+    Обучаемость
+  </li>
+
+  <li data-ru="Усидчивость" data-en="Perseverance">
+    Усидчивость
+  </li>
+
+  <li data-ru="Ответственность" data-en="Responsibility">
+    Ответственность
+  </li>
+
+  <li data-ru="Стрессоустойчивость" data-en="Stress resistance">
+    Стрессоустойчивость
+  </li>
+
+  <li data-ru="Внимание к деталям" data-en="Attention to detail">
+    Внимание к деталям
+  </li>
+
 </ul>
+```
+
+  </div>
+
 </section>
 
-<section class="grid">
-  <div class="card">
-    <h2>Образование</h2>
-    <p><strong>СПбГУТ</strong><br> Инфокоммуникационные технологии и системы связи<br> Радиотехника (2015)</p>
-  </div>
-  <div class="card">
-    <h2>Курсы</h2>
-    <p><strong>Тестирование ПО с нуля</strong><br> Stepik (2025)<br> 4 месяца — теория и практика</p>
-  </div>
-</section>
+<!-- ===== Experience ===== -->
 
 <section class="card">
-<h2>Языки</h2>
-<p>🇬🇧 Английский — B2 (Upper‑Intermediate)</p>
+
+  <h2 data-ru="Опыт работы" data-en="Work Experience">
+    Опыт работы
+  </h2>
+
+  <p>
+    <strong
+      data-ru="QA Engineer (пет-проекты)"
+      data-en="QA Engineer (Pet Projects)">
+      QA Engineer (пет-проекты)
+    </strong>
+    <br>
+
+```
+<span
+  data-ru="Декабрь 2025 — Январь 2026 (2 месяца)"
+  data-en="December 2025 — January 2026 (2 months)">
+  Декабрь 2025 — Январь 2026 (2 месяца)
+</span>
+```
+
+  </p>
+
+  <ul>
+
+```
+<li>
+  <a href="https://petstore.swagger.io/#/pet/addPet" target="_blank">
+    Petstore
+  </a>
+</li>
+
+<li>
+  <a href="https://opentip.kaspersky.com/Help_ru/Doc_data/WorkingWithAPI.htm" target="_blank">
+    Kaspersky Threat Intelligence Portal
+  </a>
+</li>
+
+<li>
+  <a href="https://www.saucedemo.com/" target="_blank">
+    <span
+      data-ru="Демо Интернет-Магазин"
+      data-en="Demo Online Store">
+      Демо Интернет-Магазин
+    </span>
+  </a>
+</li>
+```
+
+  </ul>
+
+  <p
+    data-ru="Тестирование API (Postman: простые автотесты, коллекции, переменные). Тестирование полей ввода. Тестирование пользовательских сценариев: каталог, корзина, оформление заказа. Составление чек-листов, баг-репортов."
+    data-en="API testing (Postman: basic automated tests, collections, variables). Input field testing. Testing user scenarios: catalog, shopping cart, and checkout. Creating checklists and bug reports.">
+    Тестирование API (Postman: простые автотесты, коллекции, переменные). Тестирование полей ввода. Тестирование пользовательских сценариев: каталог, корзина, оформление заказа. Составление чек-листов, баг-репортов.
+  </p>
+
+  <p>
+    <strong>QA Engineer</strong>
+  </p>
+
+  <li style="list-style-position: inside;">
+    <strong
+      data-ru="Bulka Games — Февраль 2026 — настоящее время"
+      data-en="Bulka Games — February 2026 — Present">
+      Bulka Games — Февраль 2026 — настоящее время
+    </strong>
+  </li>
+
+  <p
+    data-ru="UI/UX тестирование, Accessibility, анализ требований, работа с БД, чтение и анализ логов, регресс / Smoke"
+    data-en="UI/UX testing, accessibility testing, requirements analysis, database testing, log reading and analysis, regression and smoke testing">
+    UI/UX тестирование, Accessibility, анализ требований, работа с БД, чтение и анализ логов, регресс / Smoke
+  </p>
+
 </section>
 
-<footer>
-© 2026 · Филипп Литвинец · QA Engineer
+<!-- ===== Education ===== -->
+
+<section class="grid">
+
+  <div class="card">
+
+```
+<h2 data-ru="Образование" data-en="Education">
+  Образование
+</h2>
+
+<p>
+  <strong>СПбГУТ</strong>
+  <br>
+
+  <span
+    data-ru="Инфокоммуникационные технологии и системы связи"
+    data-en="Infocommunication Technologies and Communication Systems">
+    Инфокоммуникационные технологии и системы связи
+  </span>
+
+  <br>
+
+  <span
+    data-ru="Радиотехника (2015)"
+    data-en="Radio Engineering (2015)">
+    Радиотехника (2015)
+  </span>
+</p>
+```
+
+  </div>
+
+  <div class="card">
+
+```
+<h2 data-ru="Курсы" data-en="Courses">
+  Курсы
+</h2>
+
+<p>
+
+  <strong
+    data-ru="Тестирование ПО с нуля"
+    data-en="Software Testing from Scratch">
+    Тестирование ПО с нуля
+  </strong>
+
+  <br>
+
+  Stepik (2025)
+
+  <br>
+
+  <span
+    data-ru="4 месяца — теория и практика"
+    data-en="4 months — theory and practice">
+    4 месяца — теория и практика
+  </span>
+
+</p>
+```
+
+  </div>
+
+</section>
+
+<!-- ===== Languages ===== -->
+
+<section class="card">
+
+  <h2 data-ru="Языки" data-en="Languages">
+    Языки
+  </h2>
+
+  <p
+    data-ru="🇬🇧 Английский — B2 (Upper-Intermediate)"
+    data-en="🇬🇧 English — B2 (Upper-Intermediate)">
+    🇬🇧 Английский — B2 (Upper-Intermediate)
+  </p>
+
+</section>
+
+<!-- ===== Footer ===== -->
+
+<footer
+  data-ru="© 2026 · Филипп Литвинец · QA Engineer"
+  data-en="© 2026 · Philipp Litvinets · QA Engineer">
+  © 2026 · Филипп Литвинец · QA Engineer
 </footer>
 
 </div>
+
 </body>
 </html>
